@@ -34,6 +34,7 @@
                 <th>Latitude</th>
                 <th>Luas</th>
                 <th>Jumlah Penduduk</th>
+                <th colspan='2'>Aksi</th>
             </tr>";
 
         // 7. Looping data: mengambil satu baris data sebagai array asosiatif hingga habis
@@ -46,6 +47,8 @@
                 <td>".$row["latitude"]."</td>
                 <td>".$row["luas"]."</td>
                 <td align='right'>".$row["jumlah_penduduk"]."</td>
+                <td><a href=delete.php?id=".$row["id"].">hapus</a></td>
+                <td><a href=edit/index.php?id=".$row["id"].">edit</a></td>
             </tr>";
         }
         
